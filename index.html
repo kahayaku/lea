@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pentru Lea 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Start Screen -->
+  <div class="startOverlay" id="startOverlay" role="dialog" aria-modal="true">
+    <div class="startCard">
+      <div class="startIcon">💌</div>
+      <h2>Lea</h2>
+      <p>
+        Pentru cea mai perfecta fata.
+      </p>
+      <button class="startBtn" id="startBtn" type="button">Deschide</button>
+      <div class="startHint">p.s te bulesc:333</div>
+    </div>
+  </div>
+
+  <!-- Background hearts -->
+  <div class="bg" aria-hidden="true">
+    <div class="hearts" id="hearts"></div>
+    <div class="glow"></div>
+  </div>
+
+  <main class="wrap locked" id="app">
+    <header class="top">
+      <div class="brand">
+        <div class="logo">💗</div>
+        <div class="title">
+          <h1>Pentru Lea</h1>
+          <p>câteva scrisori pe care vreau să le ai aproape</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="pill" id="btnAmbient" type="button">Muzică ▶</button>
+        <button class="pill ghost" id="btnCopy" type="button">Copiază 💌</button>
+      </div>
+    </header>
+
+    <section class="controls">
+      <button class="tab active" data-filter="all">Toate</button>
+      <button class="tab" data-filter="dor">Mi-e dor</button>
+      <button class="tab" data-filter="sad">Când mi-e greu</button>
+      <button class="tab" data-filter="iubire">Iubire</button>
+      <button class="tab" data-filter="noapte">Noapte</button>
+    </section>
+
+    <section class="content">
+      <aside class="list" id="list" aria-label="Lista scrisorilor"></aside>
+
+      <article class="card" aria-label="Scrisoarea aleasă">
+        <div class="cardTop">
+          <div>
+            <h2 id="letterTitle">Alege o scrisoare</h2>
+            <p class="meta" id="letterMeta">în stânga ai lista</p>
+          </div>
+          <div class="chips" id="chips"></div>
+        </div>
+
+        <div class="paper">
+          <div class="typewriter" id="typewriter"></div>
+          <div class="signature" id="signature">— pentru Lea, cu drag</div>
+        </div>
+
+        <div class="cardBottom">
+          <button class="btn" id="btnRandom" type="button">Alege pentru mine</button>
+          <button class="btn secondary" id="btnMoreHearts" type="button">Mai multe inimi</button>
+          <button class="btn secondary" id="btnCopyLink" type="button">Copiază link</button>
+        </div>
+      </article>
+    </section>
+
+    
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
